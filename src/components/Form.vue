@@ -8,7 +8,7 @@
         <br />
         <input type="checkbox" v-model="myboolean" /> {{ myboolean }}
         <br />
-        爱好
+        爱好 win subing
         <input type="checkbox" name="1" value="吃" v-model="mylike" />吃
         <input type="checkbox" name="2" value="喝" v-model="mylike" />喝
         <input type="checkbox" name="3" value="玩" v-model="mylike" />玩
