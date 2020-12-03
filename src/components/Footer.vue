@@ -1,17 +1,10 @@
 <template>
     <div class="footer">
         <ul class="router">
-            <li
-                v-for="item in rouerList"
-                :key="item.name"
-                v-text="item.name"
-                @click="toLink(item.link)"
-                :class="item.link.indexOf(state) > -1 ? 'active' : ''"
-            >
-                {{ item.link.indexOf(state) > -1 }}
-            </li>
+            <router-link :to="'index'" tag="li" active-class="active">Home</router-link>
+            <router-link :to="'Data'" tag="li" active-class="active">Data</router-link>
+            <router-link :to="'MyComponents'" tag="li" active-class="active">MyComponents</router-link>
         </ul>
-        <!-- <h2>{{ state }}</h2> -->
     </div>
 </template>
 
@@ -19,40 +12,14 @@
 export default {
     name: "Footer",
     data() {
-        return {
-            rouerList: [
-                { name: "to form", link: "./form" },
-                { name: "to data", link: "./data" },
-                { name: "to mycomponents", link: "./mycomponents" },
-                { name: "to HelloWorld", link: "./HelloWorld" },
-            ],
-            state: "./HelloWorld",
-        };
+        return {};
     },
-    methods: {
-        toLink: function (params) {
-            console.log(this.state);
-            console.log(params);
-
-            if (!(params.indexOf(this.state) > -1)) {
-                this.$router.push(params);
-            }
-        },
-    },
-    mounted: function (params) {
-        console.log(this.$route.path);
-        let path = this.$route.path
-        if (path == "/") {
-            this.state = "./HelloWorld";
-        } else {
-            this.state = this.$route.path;
-        }
-    },
+    methods: {},
+    mounted: function (params) {},
 };
 </script>
 
 <style  scoped>
-
 .footer {
     width: 100%;
     position: fixed;

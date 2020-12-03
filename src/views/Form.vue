@@ -39,7 +39,7 @@
             <li @click.stop="clickLi()">1111</li>
             <li @click="clickLi()">22222</li>
         </ul>
-        <hr>
+        <hr />
         <Footer></Footer>
     </div>
 </template>

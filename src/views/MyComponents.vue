@@ -8,14 +8,14 @@
         <SonTwo>
             <div>父组件传递给sonTwo的数据</div>
         </SonTwo>
-        <Footer></Footer>
+
     </div>
 </template>
 
 <script>
 
-import SonOne from './SonOne'  
-import SonTwo from './SonTwo'  
+import SonOne from '@/views/SonOne'  
+import SonTwo from '@/views/SonTwo'  
 
 export default {
     name: "Form",

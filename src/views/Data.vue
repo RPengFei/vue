@@ -9,7 +9,6 @@
                 {{i}}
             </li>
         </ul>
-        <Footer></Footer>
     </div>
 </template>
 

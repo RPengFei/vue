@@ -1,18 +1,31 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Form from '../views/Form'
+import MyComponents from '../views/MyComponents'
+import Data from '../views/Data'
 
-
-
-const routes = [
-  {
-    path: '/',
-    name: 'Form',
-    component: Form
-  }
-]
+Vue.use(VueRouter)
 
 export default new VueRouter({
-  routes
+    routes: [{
+            path: '/',
+            name: 'Form',
+            component: Form
+        },
+        {
+            path: '/Data',
+            name: 'Data',
+            component: Data
+        },
+        {
+            path: '/MyComponents',
+            name: 'MyComponents',
+            component: MyComponents
+        },
+        {
+            path: '*',
+            name: 'Form',
+            component: Form
+        },
+    ]
 })
-
