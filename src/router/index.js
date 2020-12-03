@@ -7,8 +7,9 @@ import Data from '../views/Data'
 Vue.use(VueRouter)
 
 export default new VueRouter({
-    routes: [{
-            path: '/',
+    routes: [
+        {
+            path: '/Form',
             name: 'Form',
             component: Form
         },
@@ -24,8 +25,7 @@ export default new VueRouter({
         },
         {
             path: '*',
-            name: 'Form',
-            component: Form
+            redirect:'/Form'
         },
     ]
 })

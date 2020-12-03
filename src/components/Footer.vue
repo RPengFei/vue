@@ -1,7 +1,7 @@
 <template>
     <div class="footer">
         <ul class="router">
-            <router-link :to="'index'" tag="li" active-class="active">Home</router-link>
+            <router-link :to="'Form'" tag="li" active-class="active">Form</router-link>
             <router-link :to="'Data'" tag="li" active-class="active">Data</router-link>
             <router-link :to="'MyComponents'" tag="li" active-class="active">MyComponents</router-link>
         </ul>
