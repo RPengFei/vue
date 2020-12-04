@@ -45,6 +45,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
     name: "Form",
     data() {
@@ -90,6 +91,11 @@ export default {
                 this.arraylist.length === this.mylikes.length ? true : false;
         },
     },
+    mounted(){
+        axios.get('http://www.mei.com/appapi/search/searchFind/v3').then(res=>{
+            console.log(res);
+        })
+    }
 };
 </script>
 

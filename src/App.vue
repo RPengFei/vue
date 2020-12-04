@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    {{msg}}
     <router-view></router-view>
     <Footer></Footer>
   </div>
@@ -15,7 +14,6 @@ Vue.use(bus);
 export default {
     data(){
         return {
-            msg:222222
         }
     },
     components:{
