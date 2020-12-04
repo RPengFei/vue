@@ -95,6 +95,9 @@ export default {
         axios.get('http://www.mei.com/appapi/search/searchFind/v3').then(res=>{
             console.log(res);
         })
+        axios.get("/api/live/recommend?_=303e368808777c3ce009c7b41437d4ff").then(res=>{
+            console.log(res);
+        })
     }
 };
 </script>
