@@ -92,10 +92,17 @@ export default {
         },
     },
     mounted(){
-        axios.get('http://www.mei.com/appapi/search/searchFind/v3').then(res=>{
-            console.log(res);
-        })
-        axios.get("/api/live/recommend?_=303e368808777c3ce009c7b41437d4ff").then(res=>{
+        // axios.get('http://www.mei.com/appapi/search/searchFind/v3').then(res=>{
+        //     console.log(res);
+        // })
+        // axios.get("/api/live/recommend?_=303e368808777c3ce009c7b41437d4ff").then(res=>{
+        //     console.log(res);
+        // })
+
+        axios.post('https://pgjpf.com/api/login',{
+            email:'224878902311@qq2.com',
+            password:"password"
+        }).then(res =>{
             console.log(res);
         })
     }
