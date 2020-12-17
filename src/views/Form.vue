@@ -98,13 +98,15 @@ export default {
         // axios.get("/api/live/recommend?_=303e368808777c3ce009c7b41437d4ff").then(res=>{
         //     console.log(res);
         // })
+        getUser()
+    
+        async function getUser() {
+            const response = await axios.get('http://www.mei.com/appapi/search/searchFind/v3');
+            const res = await axios.post('https://pgjpf.com/api/login',{email:'123456@qq.com',password:"123456"})
 
-        axios.post('https://pgjpf.com/api/login',{
-            email:'224878902311@qq2.com',
-            password:"password"
-        }).then(res =>{
+            console.log(response);
             console.log(res);
-        })
+        }
     }
 };
 </script>
